@@ -1,22 +1,18 @@
 /* include font here */
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* @import url('../fonts/MYRIADPRO-REGULAR.OTF'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
 
 /* 
-    font-family: 'Karla', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Source Code Pro', monospace;
-    font-family: 'Fira Code', monospace;
-
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
 */
 
 /* basic styling here now */
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
 
@@ -26,10 +22,224 @@ a{
 
 ul{
     list-style: none;
+    padding: 0;
 }
 
 li{
     list-style: none;
 }
 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 14px;
+    font-weight: 300;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.742;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
 /* header top section start */
+
+.logo{
+    padding: 45px 0;
+}
+
+.logo a img{
+    width: 120px;
+}
+.nav-menu{
+    margin: 0;
+    text-align: right;
+    
+}
+
+.nav-menu li{
+    padding: 50px 0;
+    display: inline-block;
+    z-index: 1;
+}
+
+.nav-menu li::after{
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: red;
+    content: "";
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.nav-menu li:hover::after{
+    width:100%;
+}
+
+.nav-menu li a{
+    padding-right: 50px;
+    color: #626262;
+    line-height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header .hero-banner img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.latest-post{
+    padding: 30px 0;
+}
+
+.single-post-item {
+    margin-bottom: 80px;
+}
+
+.single-post-item .catagroy a{
+    color: #b4ad9e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.single-post-item h2{
+    margin: 20px 0;
+  
+}
+
+.single-post-item h2 a{
+    font-size: 30px;
+    color:#626262;
+   
+}
+
+.single-post-item p{
+    color: #626262;
+    padding: 0 10px;
+}
+
+.single-post-item a{
+    display: inline-block;
+    color: #626262;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    margin-top: 10px;
+}
+
+.post-img a{
+    display: block;
+}
+
+.post-img img{
+    width: 100%;
+}
+
+.newslatter-area{
+    background-color: #f0f0f0;
+    padding: 100px 0;
+}
+
+.latter-news-area{
+    text-align: center;
+}
+
+.latter-news-area h2{
+    font-size: 30px;
+    line-height: 30px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.news-btns{
+    margin-top: 50px;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.news-btns input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.news-btns input::placeholder{
+    color:#626262;
+    line-height: 24px;
+}
+.news-btns button{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.news-btns button i{
+    font-size: 20px;
+}
+
+.post-area{
+    padding: 50px 0;
+}
+
+.read-more-btn{
+    text-align: center;
+}
+.read-more-btn a {
+    text-align: center;
+    margin: 30px;
+    padding: 10px 20px;
+    border: 1px solid #626262;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+footer{
+    background: #d3cece;
+    padding: 20px 0;
+}
+
+
+.footer-menu{
+    margin: 0; 
+}
+
+.footer-menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-menu li a{
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-social-links{
+    margin: 0;
+    text-align: right;
+}
+
+.footer-social-links li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social-links li a{
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+}
